@@ -218,34 +218,14 @@ button:focus,
     margin-right: 10%;
     padding:0; 
   }
+  .navbar-collapse {
+    width: inherit;
 
-  .navbar-nav .nav-link:hover {
-    background-color: #ffdada;
-    opacity: 0.5;
-    color: black;
-    transition: 0.3s all ease-in-out;
+    @include medium {
+      width: unset;
+    }
   }
 
-  .navbar-nav .nav-link.active:hover {
-    background-color: transparent;
-    color: #fff9f9;
-    border-radius: 1px;
-    border: 1px solid rgb(255, 185, 185);
-    opacity: 0.7;
-    transition: 0.3s all ease-in-out;
-  }
-
-  .navbar-nav .nav-link.active {
-    color: #fff9f9;
-    border-radius: 1px;
-    border: 1px solid rgb(255, 185, 185);
-    opacity: 0.7;
-  }
-
-  .navbar-nav .nav-link {
-    text-transform: uppercase;
-    margin-left: 30px;
-  }
 
   .navbar-nav {
     ul {
@@ -260,8 +240,11 @@ button:focus,
     border-radius: 1px;
     opacity: 0.7;
     text-transform: uppercase;
-    margin-left: 30px;
     padding: 7px;
+    margin-left: 15px;
+    margin-top: 7px;
+
+
   }
 
   .current-menu-item {
@@ -270,6 +253,18 @@ button:focus,
     border-radius: 1px;
     border: 1px solid rgb(255, 185, 185);
     opacity: 0.7;
+  }
+
+  #menu-item-5 {
+
+    @include phone {
+
+      margin-left: -20%;
+    }
+
+    @include medium {
+      margin-left: 0px;
+    }
   }
 
   .current-menu-item a,
