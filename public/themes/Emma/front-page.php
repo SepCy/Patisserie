@@ -120,7 +120,10 @@ get_header();
                         echo $section_anniversaire['message'];
                         ?>
                     </p>
-                    <a href="#" class="btn btn-outline-info mt-md-3" style="float: right">Voir plus</a>
+                    <a href="<?php
+                        echo $section_anniversaire['link'];
+                        ?>
+                    " class="btn btn-outline-info mt-md-3" style="float: right">Voir plus</a>
                 </div>
             </div>
         </div>
