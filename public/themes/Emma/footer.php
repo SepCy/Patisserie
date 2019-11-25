@@ -41,21 +41,22 @@ $section_follow = $footer['section_suivez-nous'];
                     <h3 class="text-center text-md-left mt-sm-4">Suivez-nous</h3><br>
                     <div class="contacts" style="float: left ;display: flex; list-style-type: none; align-items:center;">
 
-                        <li> <a href="
+                        <li> 
+                            <a href="
                         <?php
                         echo $section_follow['lien_facebook'];
                         ?>
-                        ">
-                                <i class="fab fa-facebook-f fa-2x ml-4 mr-4"></i>
+                        " target="_blank">
+                                <i class="fab fa-facebook-f fa-lg ml-4 mr-4"></i>
                         </li>
                         </a>
                         <li> <a href="
                         <?php
                         echo $section_follow['lien_youtube'];
                         ?>
-                        ">
+                        " target="_blank">
 
-                                <i class="fab fa-youtube fa-2x">
+                                <i class="fab fa-youtube fa-lg">
 
                                 </i>
                         </li>
