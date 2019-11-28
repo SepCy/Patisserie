@@ -519,6 +519,10 @@ button:focus,
     @include tablet {
       height: 43vh;
     }
+
+    @include phone {
+      height: 25vh;
+    }
   }
 }
 
@@ -620,4 +624,8 @@ button:focus,
 
 .testimony .col-md-4{
   height: 30vh;
+
+  @include phone {
+    height: 20vh;
+  }
 }
