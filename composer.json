@@ -12,7 +12,10 @@
         "php": "^7.1.3",
         "wordplate/acf": "^7.1",
         "wordplate/framework": "^7.1",
-        "wordplate/plate": "^6.0"
+        "wordplate/plate": "^6.0",
+        "wpackagist-plugin/formidable": "^4.03",
+        "wpackagist-plugin/free-wp-mail-smtp": "^1.0",
+        "wpackagist-plugin/wp-mail-smtp": "^1.7"
     },
     "config": {
         "optimize-autoloader": true,
