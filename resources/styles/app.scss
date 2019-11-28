@@ -523,7 +523,7 @@ button:focus,
 }
 
 .location-area {
-  .col-md-10 {
+  .testimony {
     box-shadow: 0px 2px 21px 1px rgba(237, 237, 237, 1);
     padding: 30px;
   }
@@ -539,6 +539,10 @@ button:focus,
   h3,
   li {
     color: rgb(200, 200, 200);
+  }
+
+  .row {
+    color: rgb(128, 128, 128);
   }
 
   .contact-item {
@@ -609,7 +613,11 @@ button:focus,
 
 .person-image {
   width: 70%;
-  height: 100%;
+  height: inherit;
   border-radius: 50%;
   border: 4px solid #ffe8e8;
+}
+
+.testimony .col-md-4{
+  height: 30vh;
 }

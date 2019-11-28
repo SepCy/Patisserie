@@ -41,7 +41,7 @@ $section_follow = $footer['section_suivez-nous'];
                     <h3 class="text-center text-md-left mt-sm-4">Suivez-nous</h3><br>
                     <div class="contacts" style="float: left ;display: flex; list-style-type: none; align-items:center;">
 
-                        <li> 
+                        <li>
                             <a href="
                         <?php
                         echo $section_follow['lien_facebook'];
@@ -68,11 +68,20 @@ $section_follow = $footer['section_suivez-nous'];
                     <h3 class="text-center text-md-right mt-sm-4">Horaires</h3><br>
                     <div class="contacts" style="float: left ; list-style-type: none;">
 
-                        <li class="ml-4">Ouverts tous les jours : 24/24</li>
+                        <li class="ml-4">Nous sommmes toujours ouverts</li>
 
                     </div>
                 </div>
 
+            </div>
+            <hr style="background-color:rgb(128, 128, 128); width: 10%; opacity: .5;">
+            <div class="row pt-4">
+                <div class="col-md-4 col-6">
+                    &copy; copyright Mon Emma
+                </div>
+                <div class="col-md-4 offset-md-4 col-6">
+                   <p class="text-right">Réalisé par </p> 
+                </div>
             </div>
         </div>
     </footer>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c8d880ea2652b0586b2e27bdb3c5cfa",
+    "content-hash": "91266a6281b772829395964b0adc9fec",
     "packages": [
         {
             "name": "composer/installers",
@@ -1580,6 +1580,49 @@
             "time": "2019-02-27T07:53:33+00:00"
         },
         {
+            "name": "wordplate/mail",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wordplate/mail.git",
+                "reference": "3c28cdba9ef4dda7c2aff41fc077f1c71b7607e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wordplate/mail/zipball/3c28cdba9ef4dda7c2aff41fc077f1c71b7607e9",
+                "reference": "3c28cdba9ef4dda7c2aff41fc077f1c71b7607e9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@vinkla.com",
+                    "homepage": "https://vinkla.com"
+                }
+            ],
+            "description": "A mail plugin for WordPlate",
+            "keywords": [
+                "mail",
+                "plugin",
+                "wordplate",
+                "wordpress"
+            ],
+            "time": "2018-03-15T13:37:36+00:00"
+        },
+        {
             "name": "wordplate/plate",
             "version": "6.0.1",
             "source": {
@@ -1626,6 +1669,42 @@
                 "wordpress"
             ],
             "time": "2019-08-08T13:02:18+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-form",
+            "version": "0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-form/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-form.zip?timestamp=1340170936"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-form/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-mail-smtp",
+            "version": "1.7.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
+                "reference": "tags/1.7.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.7.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-mail-smtp/"
         }
     ],
     "packages-dev": [],

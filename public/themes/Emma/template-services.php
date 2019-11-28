@@ -23,6 +23,10 @@ $section_autres = get_field('section_autres');
 $images_autres = $section_autres['images'];
 ?>
 
+<?php
+$section_temoignage = get_field('section_temoignage');
+?>
+
 
 <?php
 
@@ -226,23 +230,23 @@ get_header();
                                         <!-- <p class="text-center">product</p> -->
                                     </div>
                                     <div class="col-md-4 pt-md-4">
-                                    <img src="<?php
-                                                   echo esc_url($images_decoration['image_2']['url']);
+                                        <img src="<?php
+                                                    echo esc_url($images_decoration['image_2']['url']);
                                                     ?>
-                                        " alt="" class="img-fluid">                                          <!-- <p class="text-center">product</p> -->
+                                        " alt="" class="img-fluid"> <!-- <p class="text-center">product</p> -->
                                     </div>
                                     <div class="col-md-4 pt-md-4">
-                                    <img src="<?php
-                                                   echo esc_url($images_decoration['image_3']['url']);
+                                        <img src="<?php
+                                                    echo esc_url($images_decoration['image_3']['url']);
                                                     ?>
-                                        " alt="" class="img-fluid">                                          <!-- <p class="text-center">product</p> -->
+                                        " alt="" class="img-fluid"> <!-- <p class="text-center">product</p> -->
                                     </div>
                                     <div class="col-md-4 pt-md-4">
-                                    <img src="<?php
-                                                   echo esc_url($images_decoration['image_4']['url']);
+                                        <img src="<?php
+                                                    echo esc_url($images_decoration['image_4']['url']);
                                                     ?>
-                                        " alt="" class="img-fluid">                                          <!-- <p class="text-center">product</p> -->
-                                    </div>                       
+                                        " alt="" class="img-fluid"> <!-- <p class="text-center">product</p> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -255,10 +259,10 @@ get_header();
 
 </div>
 
-<hr style="background-color:#FFB1B1; width: 10%; opacity: .3;">
 </div>
 <div class="padding">
     <h3 class="text-center">Témoignage</h3>
+    <hr style="background-color:#FFB1B1; width: 10%; opacity: .3;">
 </div>
 
 
@@ -266,17 +270,25 @@ get_header();
     <div class="location-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="row">
+                <div class="col-md-10 offset-md-1 col-8 offset-2">
+                    <div class="row testimony">
                         <div class="col-12 col-md-4">
-                            <img src="<?php bloginfo('template_directory') ?>/images/patricia-prudente-THcXu1LglG8-unsplash.jpg" class="person-image" alt="Image devanture">
+                            <img src="<?php
+                                        echo esc_url($section_temoignage['image_personne']['url']);
+                                        ?>
+                            " class="person-image offset-2" alt="Image devanture">
                         </div>
-                        <div class="col-12 mt-3 col-md-8 text-right">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit eos expedita, at
-                            porro nostrum
-                            aliquid,
-                            quis vitae ipsa suscipit sequi reiciendis distinctio quasi cumque iusto magni nulla ut
-                            quaerat.
+                        <div class="col-12  col-md-8 text-justify pt-4">
+                            <h3 class="text-right pb-2"><?php
+                                echo $section_temoignage['nom'];
+                                ?>
+                            </h3>
+                            <p>
+                                <?php
+                                echo $section_temoignage['temoignage'];
+                                ?>
+                            </p>
+
                         </div>
                     </div>
 

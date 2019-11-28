@@ -226,15 +226,15 @@ get_header();
     <div class="location-area pt-md-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1 " data-aos="fade-right">
-                    <div class="row">
+                <div class="col-md-10 offset-md-1 col-8 offset-2" data-aos="fade-right">
+                    <div class="row testimony">
                         <div class="col-sm-4 col-lg-3">
                             <img src="<?php
                                         echo esc_url($section_localisation['image_devanture']['url']);
                                         ?>
                             " class="bakery-image img-thumbnail" alt="Image devanture">
                         </div>
-                        <div class="col-sm-7 text-right pt-3 col-lg-8 ml-lg-3">
+                        <div class="col-sm-7 text-justify pt-3 col-lg-8 ml-lg-3">
                             <?php
                             echo $section_localisation['localisation'];
                             ?>
