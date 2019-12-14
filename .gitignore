@@ -1,0 +1,10 @@
+node_modules
+vendor
+.env
+languages
+mu-plugins
+plugins/*
+!plugins/index.php
+upgrade
+uploads
+wordpress

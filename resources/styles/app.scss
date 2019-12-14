@@ -1,0 +1,609 @@
+/* Emma */
+
+html body {
+    margin-top: 0px !important;
+  }
+  
+  $color: (
+    main-color: rgb(216, 207, 207),
+    second-color: rgb(119, 91, 91)
+  );
+  
+  $padding: 20px;
+  $space: 30px;
+  $space-reverse: -0px;
+  
+  $iphone-5-SE: 320px;
+  $inter: 438px;
+  $tablet: 600px;
+  $phone: 575px;
+  $desktop: 1180px;
+  $medium: 992px;
+  $mediumMax: 992px;
+  
+  @mixin iphone-5 {
+    @media ( max-width: #{$iphone-5-SE}) {
+      @content;
+    }
+  }
+  
+  @mixin phone {
+    @media ( max-width: #{$phone}) {
+      @content;
+    }
+  }
+  
+  @mixin inter {
+    @media ( min-width: #{$inter}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media ( min-width: #{$tablet}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media ( min-width: #{$desktop}) {
+      @content;
+    }
+  }
+  
+  @mixin medium {
+    @media ( min-width: #{$medium}) {
+      @content;
+    }
+  }
+  
+  @mixin mediumMax {
+    @media ( max-width: #{$mediumMax}) {
+      @content;
+    }
+  }
+  
+  @function color($color-name) {
+    @return map-get($colors, $color-name);
+  }
+  
+  .padding {
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+  
+  .space {
+    margin: $space 0 $space 0;
+  }
+  
+  .space-reverse {
+    margin: $space-reverse 0 0 0;
+  }
+  
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 0 !important;
+    font-family: "Montserrat", sans-serif;
+    color: #757373;
+    background-color: #fcfcfc;
+  }
+  
+  .wedding-title,
+  .birthday-title,
+  .decoration-title {
+    @include iphone-5 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  // Overall style
+  
+  .btn {
+    border-radius: 5%;
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  }
+  
+  .btn:hover {
+    background-color: #eeeeee;
+    opacity: 0.8;
+  }
+  
+  button:focus,
+  .btn {
+    outline: none;
+  }
+  
+  .btn-outline-info {
+    color: #ffb1b1;
+    border-color: #ffb1b1;
+  }
+  
+  //Header area
+  
+  .home {
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    height: 65vh;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    background-color: #ffb1b1;
+  }
+  
+  .header {
+    width: 100%;
+  
+    margin-top: 0;
+  
+    @include tablet {
+      // height: 50vh;
+    }
+  
+    .btn-outline-info {
+      font-size: 1.2rem;
+      color: rgb(70, 62, 62);
+      // opacity: 0.8;
+      border-color: #e2eafa;
+    }
+  
+    .logo {
+      max-width: 60px;
+      height: auto;
+      opacity: 1;
+  
+      @include tablet {
+        width: 25%;
+      }
+  
+      @include medium {
+        max-width: 75px;
+      }
+    }
+  
+    .navbar-light .navbar-toggler {
+      border: none;
+    }
+  
+    .navbar-light .navbar-toggler {
+      color: white;
+    }
+  
+    nav {
+      position: relative;
+      background: url(../images/background.jpg) no-repeat center center fixed;
+      height: fit-content;
+      background-size: cover;
+      background-blend-mode: multiply;
+      width: 100%;
+      background-color: #ffb1b1;
+  
+      @include mediumMax {
+        background-color: #fd919e;
+      }
+  
+      // @include medium {
+      //   background-color: #ffb1c3;
+      // }
+  
+      a {
+        width: 55vw;
+  
+        @include medium {
+          width: 100%;
+        }
+      }
+    }
+  
+    .navbar-collapse {
+      position: relative;
+      border-top: 0.5px solid #ffc7c7;
+      // box-shadow: 10px 10px 62px -22px #d4c2c2;
+      margin-top: 5px;
+      margin-bottom: 0;
+      padding-left: 20px !important;
+  
+      @include medium {
+        border-top: none;
+        margin-right: 8%;
+      }
+    }
+  
+    .navbar-nav {
+      margin-right: 10%;
+    }
+  
+    .navbar-nav .nav-link:hover {
+      background-color: #ffdada;
+      opacity: 0.5;
+      color: black;
+      transition: 0.3s all ease-in-out;
+    }
+  
+    .navbar-nav .nav-link.active:hover {
+      background-color: transparent;
+      color: #fff9f9;
+      border-radius: 1px;
+      border: 1px solid rgb(255, 185, 185);
+      opacity: 0.7;
+      transition: 0.3s all ease-in-out;
+    }
+  
+    .navbar-nav .nav-link.active {
+      color: #fff9f9;
+      border-radius: 1px;
+      border: 1px solid rgb(255, 185, 185);
+      opacity: 0.7;
+    }
+  
+    .navbar-nav .nav-link {
+      text-transform: uppercase;
+      margin-left: 30px;
+    }
+  
+    .navbar-nav {
+      ul {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  
+    .menu-item {
+      list-style-type: none;
+      color: #fff9f9;
+      border-radius: 1px;
+      opacity: 0.7;
+      text-transform: uppercase;
+      margin-left: 30px;
+      padding: 7px;
+    }
+  
+    .current-menu-item {
+      list-style-type: none;
+      color: #fff9f9;
+      border-radius: 1px;
+      border: 1px solid rgb(255, 185, 185);
+      opacity: 0.7;
+    }
+  
+    .current-menu-item a,
+    .menu-item a {
+      color: #363636;
+    }
+  
+    .current-menu-item a {
+      color: #fff9f9;
+    }
+  
+    .menu-item:hover {
+      background-color: #ffdddd;
+      opacity: 0.5;
+      color: black;
+      transition: 0.3s all ease-in-out;
+    }
+  
+    .menu-item:hover a {
+      text-decoration: none;
+    }
+  
+    .menu-item:hover {
+      color: #000000;
+    }
+  
+    .title {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+      display: block;
+  
+      .btn {
+        outline: none;
+      }
+  
+      .welcome-text {
+        font-weight: 500;
+        color: #eeeeee;
+        opacity: 0.9;
+  
+        @include tablet {
+          font-size: 3rem;
+        }
+  
+        @include medium() {
+          font-size: 3.5rem;
+        }
+      }
+  
+      .slogan {
+        color: #e2eafa;
+  
+        @include tablet {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  
+  // Wedding area
+  
+  .wedding-area {
+    .btn-outline-info {
+      color: #ffb1b1;
+      border-color: #ffb1b1;
+    }
+  
+    .btn-outline-info:hover {
+      color: #ffffff;
+      border-color: #ffb1b1;
+      background-color: #ffb1b1;
+      opacity: 0.8;
+    }
+  
+    .wedding-description {
+    }
+  
+    .wedding-cake {
+      width: 100%;
+      height: auto;
+      margin-top: -20px;
+  
+      @include medium {
+        width: 45%;
+        height: auto;
+        float: right;
+      }
+      @include phone {
+        width: 81px;
+        margin-top: 20px;
+      }
+    }
+  
+    .wedding-title {
+      position: relative;
+    }
+  
+    .wedding-title::after {
+      content: url("../icons/Groupe\ 90.svg");
+      position: relative;
+      // left: 60%;
+    }
+  
+    .wedding-desc-block {
+      margin-top: 20px;
+    }
+  }
+  
+  // Birthday
+  
+  .birthday-title {
+    float: right;
+    position: relative;
+  }
+  
+  .birthday-title::before {
+    content: url("../icons/Groupe\ 90.svg");
+    left: 50%;
+  }
+  
+  .birthday-area {
+    .btn-outline-info {
+      color: #ffb1b1;
+      border-color: #ffb1b1;
+    }
+  
+    .btn-outline-info:hover {
+      color: #ffffff;
+      border-color: #ffb1b1;
+      background-color: #ffb1b1;
+      opacity: 0.8;
+    }
+  
+    .birthday-cake-group {
+      height: 70vh;
+  
+      @include tablet {
+        height: 50vh;
+        margin-top: -10px;
+      }
+    }
+  
+    .birthday-cake-1,
+    .birthday-cake-2 {
+      width: 52%;
+      height: 18rem;
+  
+      @include tablet {
+        height: 12rem;
+      }
+    }
+  
+    .birthday-cake-2 {
+      float: right;
+    }
+  
+    .birthday-cake-2 {
+      transform: translateY(-70%);
+      z-index: 3;
+    }
+  
+    .birthday-description {
+      float: right;
+    }
+  }
+  
+  //Décoration
+  
+  .decoration-area {
+    @include medium {
+      margin-bottom: 60px;
+    }
+  
+    .carousel-item {
+      @include medium {
+        height: 44vh;
+      }
+  
+      .col-md-3 {
+        position: relative;
+  
+        .deco-desc {
+          opacity: 0.9;
+          background-color: #fff2f2;
+          padding: 5px;
+          position: absolute;
+          width: 89.889%;
+          top: -5.2%;
+          visibility: hidden;
+          transition: 0.3s all ease-out;
+          color: rgb(0, 0, 0);
+          font-weight: 400;
+        }
+      }
+  
+      .col-md-3 img {
+        height: 35vh;
+        box-shadow: 0px 2px 10px 0px rgba(217, 217, 217, 1);
+  
+        @include phone {
+          height: 50vh;
+          margin-bottom: 20px;
+        }
+  
+        transition: 0.3s all ease-out;
+      }
+  
+      .col-md-3 img:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        transform: translateY(-5%);
+        transition: 0.3s all ease-in-out;
+        box-shadow: 0px 10px 20px 0px rgba(217, 217, 217, 1);
+      }
+  
+      .col-md-3 img:hover + .deco-desc {
+        visibility: visible;
+        top: 10%;
+        transition: 0.3s all ease-in;
+        transition-delay: 0.1s;
+        z-index: 0;
+      }
+  
+      .col-md-3 img:hover + #btn {
+        visibility: visible;
+      }
+    }
+  
+    .decoration-title {
+      position: relative;
+    }
+  
+    .decoration-title::after {
+      content: url("../icons/Groupe\ 90.svg");
+      position: relative;
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+  
+    .carousel-indicators {
+      top: 105%;
+      color: rgb(24, 21, 21);
+  
+      @include phone {
+        top: 100%;
+      }
+    }
+  
+    .carousel-indicators li {
+      background-color: rgb(255, 228, 228);
+    }
+  }
+  
+  //Vidéo area
+  
+  .video-area {
+    position: relative;
+    height: fit-content;
+    background-color: #ffd7d7;
+    // clip-path: polygon(50% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  
+    .video {
+      width: 100%;
+      height: 70vh;
+    }
+  }
+  
+  //Location area
+  
+  .location-area,
+  .testimony-area {
+    .bakery-image,
+    .person-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .location-area {
+  }
+  
+  .footer {
+    position: absolute;
+    width: 100%;
+    background-color: #5e6170;
+    // clip-path: polygon(50% 0, 100% 8%, 100% 100%, 0 100%, 0 8%);
+  
+    i,
+    h3,
+    li {
+      color: rgb(200, 200, 200);
+    }
+  
+    .contact-item {
+      list-style-type: none;
+    }
+  
+    @include phone {
+      font-size: 1rem;
+    }
+  
+    h3 {
+      @include phone {
+        padding-top: 30px;
+      }
+    }
+  }
+  
+  // Services page
+  
+  .nav-pills .nav-link.active {
+    border-radius: 0px;
+    background-color: #ffbbbb;
+    clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0 99%, 0 0);
+  }
+  
+  .nav-pills .nav-link {
+    color: #4d4e4e;
+  }
+  
+  @include phone {
+    #v-pills-tab {
+      font-size: 0.8rem;
+    }
+  
+    #v-pills-tabContent {
+      .img-fluid {
+        padding-left: 35px;
+      }
+  
+      height: 60vh;
+      overflow-y: scroll;
+  
+      scrollbar-width: none;
+    }
+  }
+  
