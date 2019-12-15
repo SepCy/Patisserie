@@ -1,10 +1,15 @@
 <?php
-$section_contact = get_field('section_contact');
+$footer = get_field('footer');
 ?>
 
 <?php
-$section_follow = get_field('section_suivez_nous');
+$section_contact = $footer['section_contact'];
 ?>
+
+<?php
+$section_follow = $footer['section_suivez-nous'];
+?>
+
 <!-- Footer Area -->
 
 <div class="padding footer mt-md-4">

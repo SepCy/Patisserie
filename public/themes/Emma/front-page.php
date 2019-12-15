@@ -72,7 +72,9 @@ get_header();
                         echo $section_mariage['message'];
                         ?>
                     </p>
-                    <a href="services.html" class="btn btn-outline-info mt-md-3">Voir plus</a>
+                    <a href="<?php
+                        echo $section_mariage['link'];
+                        ?>" class="btn btn-outline-info mt-md-3">Voir plus</a>
                 </div>
                 <div class="col-3 col-lg-4" data-aos="fade-left">
                     <img src="<?php
@@ -276,15 +278,15 @@ get_header();
     <div class="location-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-10 offset-md-1 " data-aos="fade-right">
                     <div class="row">
-                        <div class="col-sm-4 col-lg-3" data-aos="fade-right">
+                        <div class="col-sm-4 col-lg-3">
                             <img src="<?php
                                         echo esc_url($section_localisation['image']['url']);
                                         ?>
                             " class="bakery-image img-thumbnail" alt="Image devanture">
                         </div>
-                        <div class="col-sm-7 text-right pt-sm-3 col-lg-8 ml-lg-3" data-aos="fade-up-left">
+                        <div class="col-sm-7 text-right pt-sm-3 col-lg-8 ml-lg-3">
                             <?php
                             echo $section_localisation['localisation'];
                             ?>

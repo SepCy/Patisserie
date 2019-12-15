@@ -64,7 +64,7 @@ get_header();
                                 <div class="row">
                                     <div class="col-md-4 pt-md-4">
                                         <img src="<?php bloginfo('template_directory') ?>/images/frank-zhang-OjW_VqEP0So-unsplash.jpg" alt="" class="img-fluid">
-                                        <p class="text-center">product</p>
+                                        <p class="text-center">productyo</p>
                                     </div>
                                     <div class="col-md-4 pt-md-4">
                                         <img src="<?php bloginfo('template_directory') ?>/images/frank-zhang-OjW_VqEP0So-unsplash.jpg" alt="" class="img-fluid">
