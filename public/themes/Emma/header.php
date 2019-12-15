@@ -30,7 +30,6 @@
 <body>
 
     <!-- Header Area -->
-
     <header class="header">
         <nav class="navbar top navbar-expand-lg navbar-light col-md-12">
             <a href="#" class="offset-md-1"><img src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="Logo" class="logo"></a>

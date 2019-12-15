@@ -14,23 +14,27 @@
                  </div>
                  <div class="col-md-3 col-sm-5">
                      <h3 class="text-center text-md-left mt-sm-4">Suivez-nous</h3><br>
-                     <div class="contacts" style="display: flex; list-style-type: none;">
+                     <div class="contacts" style="float: left ;display: flex; list-style-type: none; align-items:center;">
+
                          <li><i class="fab fa-facebook-f fa-2x ml-4 mr-4"></i></li>
                          <li><i class="fab fa-youtube fa-2x"></i></li>
+
                      </div>
                  </div>
                  <div class="col-md-4 col-sm-5">
                      <h3 class="text-center text-md-right mt-sm-4">Horaires</h3><br>
-                     <div class="contacts" style="float: right; list-style-type: none;">
-                         <li>Ouverts tous les jours</li>
+                     <div class="contacts" style="float: left ; list-style-type: none;">
+
+                         <li class="ml-4">Ouverts tous les jours : 24/24</li>
+                        
                      </div>
                  </div>
-                 
+
              </div>
          </div>
      </footer>
  </div>
-
+ </div>
  <!-- Script tags -->
 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

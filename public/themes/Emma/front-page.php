@@ -100,39 +100,39 @@ get_header();
                                 <div class="row">
                                     <div class="col-md-3 col-sm-4 mt-sm-4" data-aos-delay="300" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                         <img src="<?php bloginfo('template_directory') ?>/images/mitchell-lawler-tbaoryUol_E-unsplash.jpg" class="d-block w-100" alt="...">
-                                        <p class="deco-desc">Loreme ipqume sjmkmlssoioi</p>
+                                        <p class="deco-desc text-center center mt-2">Loreme ipqume</p>
                                     </div>
                                     <div class="col-md-3 col-sm-4 mt-sm-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
                                         <img src="<?php bloginfo('template_directory') ?>/images/mitchell-lawler-tbaoryUol_E-unsplash.jpg" class="d-block w-100" alt="...">
-                                        <p class="deco-desc">Loreme ipqume sjmkmlssoioi</p>
+                                        <p class="deco-desc text-center center mt-2">Loreme ipqume sjmkmlssoioi</p>
                                     </div>
                                     <div class="col-md-3 col-sm-4 mt-sm-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
                                         <img src="<?php bloginfo('template_directory') ?>/images/mitchell-lawler-tbaoryUol_E-unsplash.jpg" class="d-block w-100" alt="...">
-                                        <p class="deco-desc">Loreme ipqume sjmkmlssoioi</p>
+                                        <p class="deco-desc text-center center mt-2">Loreme ipqume sjmkmlssoioi</p>
                                     </div>
                                     <div class="col-md-3 col-sm-4 mt-sm-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
                                         <img src="<?php bloginfo('template_directory') ?>/images/mitchell-lawler-tbaoryUol_E-unsplash.jpg" class="d-block w-100" alt="...">
-                                        <p class="deco-desc">Loreme ipqume sjmkmlssoioi</p>
+                                        <p class="deco-desc text-center center mt-2">Loreme ipqume sjmkmlssoioi</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-md-3 col-sm-4 mt-sm-4 ">
-                                        <img src="<?php bloginfo('template_directory') ?>./images/frank-zhang-OjW_VqEP0So-unsplash.jpg" class="d-block w-100" alt="...">
-                                        <p class="deco-desc">Loreme ipqume sjmkmlssoioi</p>
+                                        <img src="<?php bloginfo('template_directory') ?>/images/frank-zhang-OjW_VqEP0So-unsplash.jpg" class="d-block w-100" alt="...">
+                                        <p class="deco-desc text-center mt-2">Loreme ipqume sjmkmlssoioi</p>
                                     </div>
                                     <div class="col-md-3 col-sm-4 mt-sm-4">
-                                        <img src="<?php bloginfo('template_directory') ?>./images/frank-zhang-OjW_VqEP0So-unsplash.jpg" class="d-block w-100" alt="...">
-                                        <p class="deco-desc">Loreme ipqume sjmkmlssoioi</p>
+                                        <img src="<?php bloginfo('template_directory') ?>/images/frank-zhang-OjW_VqEP0So-unsplash.jpg" class="d-block w-100" alt="...">
+                                        <p class="deco-desc text-center mt-2">Loreme ipqume sjmkmlssoioi</p>
                                     </div>
                                     <div class="col-md-3 col-sm-4 mt-sm-4">
-                                        <img src="<?php bloginfo('template_directory') ?>./images/frank-zhang-OjW_VqEP0So-unsplash.jpg" class="d-block w-100" alt="...">
-                                        <p class="deco-desc">Loreme ipqume sjmkmlssoioi</p>
+                                        <img src="<?php bloginfo('template_directory') ?>/images/frank-zhang-OjW_VqEP0So-unsplash.jpg" class="d-block w-100" alt="...">
+                                        <p class="deco-desc text-center mt-2">Loreme ipqume sjmkmlssoioi</p>
                                     </div>
                                     <div class="col-md-3 col-sm-4 mt-sm-4">
-                                        <img src="<?php bloginfo('template_directory') ?>./images/frank-zhang-OjW_VqEP0So-unsplash.jpg" class="d-block w-100" alt="...">
-                                        <p class="deco-desc">Loreme ipqume sjmkmlssoioi</p>
+                                        <img src="<?php bloginfo('template_directory') ?>/images/frank-zhang-OjW_VqEP0So-unsplash.jpg" class="d-block w-100" alt="...">
+                                        <p class="deco-desc text-center mt-2">Loreme ipqume sjmkmlssoioi</p>
                                     </div>
                                 </div>
                             </div>
@@ -187,10 +187,10 @@ get_header();
             <div class="row">
                 <div class="col-md-10 offset-md-1">
                     <div class="row">
-                        <div class="col-12 col-md-4" data-aos="fade-right">
-                            <img src="<?php bloginfo('template_directory') ?>/images/patricia-prudente-THcXu1LglG8-unsplash.jpg" class="bakery-image" alt="Image devanture">
+                        <div class="col-sm-4 col-lg-3" data-aos="fade-right">
+                            <img src="<?php bloginfo('template_directory') ?>/images/patricia-prudente-THcXu1LglG8-unsplash.jpg" class="bakery-image img-thumbnail" alt="Image devanture">
                         </div>
-                        <div class="col-12 mt-3 col-md-8 text-right" data-aos="fade-up-left">
+                        <div class="col-sm-7 text-right pt-sm-3 col-lg-8 ml-lg-3" data-aos="fade-up-left">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit eos expedita, at porro nostrum
                             aliquid,
                             quis vitae ipsa suscipit sequi reiciendis distinctio quasi cumque iusto magni nulla ut quaerat.
