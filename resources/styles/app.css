@@ -468,7 +468,7 @@ button:focus,
   background-color: #ffd7d7;
 }
 
-.video-area .video {
+.video-area iframe {
   width: 100%;
   height: 70vh;
 }
